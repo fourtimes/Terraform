@@ -1,3 +1,7 @@
+## The Below method to run this code,
+
+First, Clone the code where you want and flow the below steps.
+
 Intialize the code
 ```sh
 terraform init
