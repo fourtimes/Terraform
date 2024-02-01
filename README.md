@@ -35,3 +35,9 @@ Providers ===> AWS, GCP, AZURE,...........100+
 **terraform output** - views Terraform outputs
 
 **terraform graph** - creates a DOT-formatted graph
+
+
+
+
+> [!TIP]
+> https://www.simplilearn.com/terraform-interview-questions-and-answers-article
