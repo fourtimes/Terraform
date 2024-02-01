@@ -17,7 +17,9 @@ Providers ===> AWS, GCP, AZURE,...........100+
 |AWS && Azure && GCP   | IAAC (Insfrastrucre as a code)|
 |K8s,.......           | PAAS (Platform as a service)|
 |Github, Bitbuket,.... | SAAS (Software as a service)|
+## Define IAC?
 
+**IAC or Infrastructure as Code** allows you to build, change, and manage your infrastructure through coding instead of manual processes. The configuration files are created according to your infrastructure specifications and these configurations can be edited and distributed securely within an organization.
 ## What are the most useful Terraform commands?
 
 **terraform init** - initializes the current directory
