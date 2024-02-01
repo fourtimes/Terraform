@@ -17,3 +17,19 @@ Providers ===> AWS, GCP, AZURE,...........100+
 |AWS && Azure && GCP   | IAAC (Insfrastrucre as a code)|
 |K8s,.......           | PAAS (Platform as a service)|
 |Github, Bitbuket,.... | SAAS (Software as a service)|
+
+## What are the most useful Terraform commands?
+
+**terraform init** - initializes the current directory
+
+**terraform plan** - a dry run to see what Terraform will do
+
+**terraform apply** - applies the Terraform code and builds stuff
+
+**terraform destroy** - destroys what has been built by Terraform
+
+**terraform refresh** - refreshes the state file
+
+**terraform output** - views Terraform outputs
+
+**terraform graph** - creates a DOT-formatted graph
