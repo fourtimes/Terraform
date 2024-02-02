@@ -30,7 +30,7 @@ Providers ===> AWS, GCP, AZURE,...........100+
 
 **terraform destroy** - destroys what has been built by Terraform
 
-**terraform refresh** - refreshes the state file
+**terraform refresh** - refreshes the state file with the real infrastrcture
 
 **terraform output** - views Terraform outputs
 
