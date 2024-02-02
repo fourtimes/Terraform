@@ -6,6 +6,10 @@ Intialize the code
 ```sh
 terraform init
 ```
+To validate the code
+```sh
+terraform validate
+```
 Planning the infrastructure
 ```sh
 terraform plan
@@ -17,4 +21,8 @@ terraform apply
 Delete all configuration using terraform
 ```sh
 terraform destroy
+```
+To get output of the terraform attributes
+```sh
+terraform output
 ```
