@@ -1,3 +1,4 @@
+# VPC
 resource "aws_vpc" "demo_vpc" {
   cidr_block = "192.168.0.0/24"
   enable_dns_hostnames = true
@@ -8,6 +9,7 @@ resource "aws_vpc" "demo_vpc" {
   }
 }
 
+# SUBNET
 resource "aws_subnet" "demo_public_subnet" {
   vpc_id = "${aws_vpc.demo_vpc.id}"
   cidr_block = "192.168.0.0/27"
@@ -18,6 +20,7 @@ resource "aws_subnet" "demo_public_subnet" {
   }
 }
 
+# IGW
 resource "aws_internet_gateway" "demo_igw" {
   vpc_id = "${aws_vpc.demo_vpc.id}"
   tags = {
@@ -25,6 +28,7 @@ resource "aws_internet_gateway" "demo_igw" {
   }
 }
 
+# ROUTE TABLE
 resource "aws_route_table" "demo_rt" {
   vpc_id = "${aws_vpc.demo_vpc.id}"
 
@@ -37,6 +41,7 @@ resource "aws_route_table" "demo_rt" {
   }
 }
 
+# ROUTE TABLE ASSOCIATION
 resource "aws_route_table_association" "demo_public_subnet" {
   subnet_id = "${aws_subnet.demo_public_subnet.id}"
   route_table_id = "${aws_route_table.demo_rt.id}"
