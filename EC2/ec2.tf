@@ -47,7 +47,7 @@ resource "aws_route_table_association" "demo_public_subnet" {
   route_table_id = "${aws_route_table.demo_rt.id}"
 }
 
-
+# SECURITY GROUP
 resource "aws_security_group" "demo_sg" {
   vpc_id = "${aws_vpc.demo_vpc.id}"
   ingress {
@@ -74,6 +74,7 @@ resource "aws_security_group" "demo_sg" {
   }
 }
 
+# EC2
 resource "aws_instance" "demo_ins" {
   ami = "ami-09694bfab577e90b0"
   instance_type = "t2.micro"
